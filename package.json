@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "concurrently  \"gatsby develop\" \"tsc --watch\" ",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
+    "concurrently": "^7.2.1",
     "gatsby": "^4.15.2",
     "gatsby-plugin-manifest": "^4.15.1",
     "gatsby-plugin-styled-components": "^5.15.0",
