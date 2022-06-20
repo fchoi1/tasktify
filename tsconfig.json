@@ -107,6 +107,6 @@
     "./gatsby-config.ts",
     "./plugins/**/*",
     "./src/**/*"
-  ],
+, "global", "utils/helpers.ts"  ],
   "exclude": ["./node_modules", "./public", "./.cache"]
 }
